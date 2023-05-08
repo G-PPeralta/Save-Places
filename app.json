@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -25,6 +23,20 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "expo": {
+      "plugins": [
+        [
+          "expo-image-picker",
+          {
+            "cameraPermission": "The app needs acces to your camera in order to take photos of your favorites places."
+          },
+          "expo-location",
+          {
+            "locationAlwaysAndWhenInUsePermission": "Allow app to use your location."
+          }
+        ]
+      ]
     }
   }
 }
